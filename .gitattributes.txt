@@ -1,0 +1,7 @@
+# Ensure all text files have LF in the repository
+* text=auto
+
+# Treat certain file types as binary
+*.jpg binary
+*.png binary
+*.exe binary
