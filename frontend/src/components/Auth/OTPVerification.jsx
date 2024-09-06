@@ -26,7 +26,7 @@ const OTPVerification = () => {
 
         if (enteredOtp.length === 6) {
             console.log("Entered OTP is:", enteredOtp);
-            const response = await fetch('http://localhost:9000/api/v1/user/verify-otp', {
+            const response = await fetch('https://job-portal-backend-zj4k.onrender.com/api/v1/user/verify-otp', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

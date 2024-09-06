@@ -18,7 +18,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:9000/api/v1/user/login",
+        "https://job-portal-backend-zj4k.onrender.com/api/v1/user/login",
         { email, password, role },
         {
           headers: {
