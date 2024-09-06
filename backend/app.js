@@ -15,7 +15,13 @@ import fileUpload from "express-fileupload";
 const app = express();
 
 
-app.use(cors())
+app.use(cors({
+  origin: 'https://job-portal-frontend-tokd.onrender.com', // Replace with your frontend URL
+  methods: 'GET,POST,PUT,DELETE', // Allow specific methods
+  credentials: true, // Allow cookies if needed
+}));
+
+
 app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
