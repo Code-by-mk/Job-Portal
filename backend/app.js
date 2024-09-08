@@ -16,7 +16,7 @@ const app = express();
 
 
 app.use(cors({
-  origin: 'https://job-portal-frontend-tokd.onrender.com', // Replace with your frontend URL
+  origin: '*', // Replace with your frontend URL
   methods: 'GET,POST,PUT,DELETE', // Allow specific methods
   credentials: true, // Allow cookies if needed
 }));
