@@ -16,8 +16,7 @@ const app = express();
 
 
 app.use(cors({
-  origin: '*', // Replace with your frontend URL
-  methods: 'GET,POST,PUT,DELETE', // Allow specific methods
+  origin: process.env.FRONTEND_URL, // Replace with your frontend URL
   credentials: true, // Allow cookies if needed
 }));
 
