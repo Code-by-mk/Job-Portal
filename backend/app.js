@@ -15,10 +15,7 @@ import fileUpload from "express-fileupload";
 const app = express();
 
 
-app.use(cors({
-  origin: process.env.FRONTEND_URL, // Replace with your frontend URL
-  credentials: true, // Allow cookies if needed
-}));
+app.use(cors());
 
 
 app.use(cookieParser());
